@@ -1,0 +1,5 @@
+VAR
+	DrivestateMachine : DriveStateMachine := (0);
+	LedStateMachine : LedSTATEMachine := (0);
+	DoorStateMachine : DoorStateMachine := (0);
+END_VAR

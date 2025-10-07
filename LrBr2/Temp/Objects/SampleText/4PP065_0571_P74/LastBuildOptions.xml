@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetOptions>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\iomap.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\sampletext\4pp065_0571_p74\iomap.iom" LastWriteTime="2017-08-30 15:45:22" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\sampletext\4pp065_0571_p74\pvmap.vvm" LastWriteTime="2016-09-27 10:11:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\channelconfiguration.xml" LastWriteTime="2025-09-23 17:06:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\sampletext\hardware.hw" LastWriteTime="2025-09-23 17:01:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\sampletext\4pp065_0571_p74\cpu.sw" LastWriteTime="2025-09-23 17:00:20" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\SampleText\4PP065_0571_P74\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\SampleText\4PP065_0571_P74\PvMap.vvm&quot; -m &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\ConfigInfo.cfi&quot; -g &quot;$(AS_PROJECT_PATH)\Temp\Objects\Declarations.lst&quot; -x &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\ChannelConfiguration.xml&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74&quot; -iomap -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\iomap.br&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;SampleText.4PP065_0571_P74&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\ashwac.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\sampletext\hardware.hw" LastWriteTime="2025-09-23 17:01:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\SampleText\Hardware.hw&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\ashwac.br&quot; -L &quot;AsIecCon: V*, asstring: V*, astime: V*, Operator: V*, Runtime: V*, sys_lib: V*&quot; -c &quot;SampleText&quot; -Z &quot;UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, Connectivity: n.d, AAS: n.d&quot; -M IA32 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;SampleText&quot; -T SG4 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\sysconf.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\sampletext\hardware.hw" LastWriteTime="2025-09-23 17:01:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\SampleText\Hardware.hw&quot;  -c &quot;SampleText&quot; -sysconf -S &quot;4PP065_0571_P74&quot; -F 1.6 -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\sysconf.br&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;SampleText&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\asfw.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\sampletext\hardware.hw" LastWriteTime="2025-09-23 17:01:54" />
+    <Prerequisite ID="c:\brautomation\as45\upgrades\modified.txt" LastWriteTime="2019-11-15 16:48:16" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\SampleText\Hardware.hw&quot;  -v V1.00.0 -S &quot;4PP065_0571_P74&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\asfw.br&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;SampleText&quot; -zip -s &quot;SampleText&quot; -firmware -F 1.6 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\ashwd.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\sampletext\hardware.hw" LastWriteTime="2025-09-23 17:01:54" />
+    <Prerequisite ID="c:\brautomation\as45\upgrades\modified.txt" LastWriteTime="2019-11-15 16:48:16" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\SampleText\Hardware.hw&quot;  -v V1.00.0 -S &quot;4PP065_0571_P74&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\ashwd.br&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;SampleText&quot; -zip -s &quot;SampleText&quot; -hwd -F 1.6 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\arconfig.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\sampletext\4pp065_0571_p74\iomap.iom" LastWriteTime="2017-08-30 15:45:22" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\sampletext\hardware.hw" LastWriteTime="2025-09-23 17:01:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\SampleText\4PP065_0571_P74\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\SampleText\Hardware.hw&quot;  -arconfig -C &quot;/RT=1000 /AM=* /SDT=5 /DAIP=10.0.1.10 /REPO=11159 /ANSL=1 /PT=11169&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=2&quot; -c &quot;SampleText&quot; -v V1.00.0 -S &quot;4PP065_0571_P74&quot; -F 1.6 -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\arconfig.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\ChannelConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\HardwareConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\ReActionTechnologyConfiguration.xml&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;SampleText&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\udbdef.br">
+    <Prerequisite ID="c:\brautomation\as45\as\technologypackages\unitsystem\n.d\transfer\modules\sg4\udbdef.br" LastWriteTime="2018-11-12 17:25:24" />
+    <CommandLine Parameter="/c copy /B /Y &quot;C:\BrAutomation\AS45\AS\TechnologyPackages\UnitSystem\n.d\Transfer\Modules\SG4\udbdef.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\udbdef.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\tcdata\tcdata.imx">
+    <Prerequisite ID="c:\brautomation\as45\as\technologypackages\textsystem\n.d\objectcatalog\elements\textconfig\template\tc.textconfig" LastWriteTime="2018-11-12 17:25:24" />
+    <CommandLine Parameter=" -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\TCData\TCData.imx&quot; -c &quot;C:\BrAutomation\AS45\AS\TechnologyPackages\TextSystem\n.d\ObjectCatalog\Elements\TextConfig\Template\TC.textconfig&quot; -I &quot;C:\BrAutomation\AS\System\D0452&quot; &quot;C:\BrAutomation\AS45\AS\TechnologyPackages\UnitSystem\n.d&quot; -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\tcdata\tcdata.s18d">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\tcdata\tcdata.imx" LastWriteTime="2025-09-23 17:06:46" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\TCData\TCData.imx&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\TCData\TCData.s18d&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\tcdata.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\tcdata\tcdata.s18d" LastWriteTime="2025-09-23 17:06:50" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\TCData\TCData.s18d&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\TCData.br&quot; -t TextModule" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\role.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\sampletext\4pp065_0571_p74\accessandsecurity\userrolesystem\role.role" LastWriteTime="2016-09-27 10:11:40" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\SampleText\4PP065_0571_P74\AccessAndSecurity\UserRoleSystem\Role.role&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\Role.br&quot; -zip -B D4.52 -F 1.6 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;SampleText&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\user.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\sampletext\4pp065_0571_p74\accessandsecurity\userrolesystem\user.user" LastWriteTime="2016-09-27 10:11:40" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\SampleText\4PP065_0571_P74\AccessAndSecurity\UserRoleSystem\User.user&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\User.br&quot; -zip -B D4.52 -F 1.6 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;SampleText&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\sys_lib.br">
+    <Prerequisite ID="c:\brautomation\as\system\d0452\sg4\ia32\sys_lib.br" LastWriteTime="2018-12-06 02:00:58" />
+    <CommandLine Parameter="/c copy /B /Y &quot;C:\BrAutomation\AS\System\D0452\SG4\IA32\sys_lib.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\sys_lib.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\runtime.br">
+    <Prerequisite ID="c:\brautomation\as\system\d0452\sg4\ia32\runtime.br" LastWriteTime="2018-12-06 02:00:58" />
+    <CommandLine Parameter="/c copy /B /Y &quot;C:\BrAutomation\AS\System\D0452\SG4\IA32\runtime.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\runtime.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\asstring.br">
+    <Prerequisite ID="c:\brautomation\as\system\d0452\sg4\ia32\asstring.br" LastWriteTime="2018-12-06 02:00:54" />
+    <CommandLine Parameter="/c copy /B /Y &quot;C:\BrAutomation\AS\System\D0452\SG4\IA32\asstring.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\asstring.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="#cpu_tp.mak">
+    <CommandLine Parameter=" -r -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\SampleText\4PP065_0571_P74\#cpu_tp.mak&quot; -k" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\binaries\sampletext\4pp065_0571_p74\transfer.lst">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\iomap.br" LastWriteTime="2025-09-23 17:06:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\ashwac.br" LastWriteTime="2025-09-23 17:06:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\sysconf.br" LastWriteTime="2025-09-23 17:06:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\asfw.br" LastWriteTime="2025-09-23 17:06:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\ashwd.br" LastWriteTime="2025-09-23 17:06:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\arconfig.br" LastWriteTime="2025-09-23 17:06:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\udbdef.br" LastWriteTime="2018-11-12 17:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\tcdata.br" LastWriteTime="2025-09-23 17:06:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\role.br" LastWriteTime="2025-09-23 17:06:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\user.br" LastWriteTime="2025-09-23 17:06:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\sys_lib.br" LastWriteTime="2018-12-06 02:00:58" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\runtime.br" LastWriteTime="2018-12-06 02:00:58" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\sampletext\4pp065_0571_p74\asstring.br" LastWriteTime="2018-12-06 02:00:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\sampletext\4pp065_0571_p74\cpu.sw" LastWriteTime="2025-09-23 17:00:20" />
+    <CommandLine Parameter=" &quot;$(AS_PROJECT_PATH)\DriveControl.apj&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -o &quot;$(AS_PROJECT_PATH)\Binaries&quot; -c &quot;SampleText&quot; -i &quot;C:\BrAutomation\AS45&quot; -S &quot;4PP065_0571_P74&quot; -all -A &quot;PP065&quot; -pil -swFiles &quot;$(AS_PROJECT_PATH)\Physical\SampleText\4PP065_0571_P74\Cpu.sw&quot; -Z &quot;UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, Connectivity: n.d, AAS: n.d&quot; -C &quot;/RT=1000 /AM=* /SDT=5 /DAIP=10.0.1.10 /REPO=11159 /ANSL=1 /PT=11169&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=2&quot; -M IA32 -T SG4" />
+  </Rule>
+</RuleSetOptions>
